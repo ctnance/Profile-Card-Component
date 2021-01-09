@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* HTML Tag Styles */
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* Card Styles */
+
+.card {
+    background: #FFF;
+    border-radius: 18px;
+    box-shadow: 8px 8px 16px hsla(0, 0%, 0%, 0.5);;
+    margin: auto;
+    text-align: center;
+}
+
+.card-img {
+    background: url(../images/bg-pattern-card.svg);
+}
+
+/* Attribution Styles */
+
+.attribution {
+    margin: 2em;
+}
