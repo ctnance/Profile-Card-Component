@@ -10,8 +10,10 @@ html {
 }
 
 body {
-    background: url(../images/bg-pattern-top.svg) calc(-978px + 50vw) calc(-978px + 64vh) no-repeat fixed,
-                url(../images/bg-pattern-bottom.svg) 50vw 44vh no-repeat fixed;
+    background: 
+      url(../images/bg-pattern-top.svg) calc(-978px + 48vw) calc(-978px + 62vh) no-repeat fixed,
+      url(../images/bg-pattern-bottom.svg) 46vw 50vh no-repeat fixed;
+      /* url(../images/bg-pattern-bottom.svg) 38vw 48vh no-repeat fixed; */
     background-color: hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
@@ -110,4 +112,14 @@ p {
 
 .attribution {
     margin: 2em;
+}
+
+@media (max-width: 480px) {
+  body {
+    background: 
+      url(../images/bg-pattern-top.svg) calc(-978px + 54vw) calc(-978px + 48vh) no-repeat fixed,
+      url(../images/bg-pattern-bottom.svg) 40vw 42vh no-repeat fixed;
+      /* url(../images/bg-pattern-bottom.svg) 38vw 48vh no-repeat fixed; */
+    background-color: hsl(185, 75%, 39%);
+  }
 }
