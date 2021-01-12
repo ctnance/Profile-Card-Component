@@ -10,10 +10,25 @@ html {
 }
 
 body {
+    background: url(../images/bg-pattern-top.svg) calc(-978px + 50vw) calc(-978px + 64vh) no-repeat fixed,
+                url(../images/bg-pattern-bottom.svg) 50vw 44vh no-repeat fixed;
     background-color: hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     display: grid;
+}
+
+p {
+  margin: .5em;
+}
+
+/* Card Section Styles */
+
+#card-section {
+  height: 90vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
 /* Card Styles */
@@ -21,8 +36,8 @@ body {
 .card {
     background: #FFF;
     border-radius: 18px;
-    box-shadow: 8px 8px 16px hsla(0, 0%, 0%, 0.5);;
-    margin: auto;
+    box-shadow: 8px 8px 16px hsla(0, 0%, 0%, 0.25);;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -36,8 +51,19 @@ body {
 
 /* Card Profile Styles */
 
+.card-profile {
+  position: relative;
+  padding: 4em 0 1em;
+}
+
 .profile-img {
+  border: 6px solid #FFF;
   border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -50px;
 }
 
 .name {
@@ -51,7 +77,7 @@ body {
 
 .country {
   color:hsl(0, 0%, 59%);
-  font-size: 15px;
+  font-size: 14px;
 }
 
 /* Card Stats Styles */
@@ -59,10 +85,15 @@ body {
 .card-stats {
   display: flex;
   border-top: 1px solid hsl(0, 0%, 59%);
+  padding: 1.5em 2.5em 1.25em;
+}
+
+.card-stats p {
+  margin: .25em;
 }
 
 .stat {
-  padding: 0 2em;
+  padding: 0 .8em;
 }
 
 .value {
@@ -71,7 +102,7 @@ body {
 
 .attribute {
   color: hsl(0, 0%, 59%);
-  font-size: 10px;
+  font-size: .5em;
   letter-spacing: 2px;
 }
 
